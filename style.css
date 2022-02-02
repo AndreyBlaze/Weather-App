@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+body {
+    width: 1366px;
+}
+
+.main {
+    background: linear-gradient(360deg, #953EBE 10.08%, #4A2D76 40.41%, #020056 81.98%);
+    width: 1366px;
+}
+
+.main-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1215px;
+    min-height: 657px;
+}
+
+.search-bar__container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    position: absolute;
+    top: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 438px;
+    height: 55px;
+    background: #ffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-bar__input {
+    height: 45px;
+    min-width: 250px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    left: 57px;
+    color: rgb(82, 81, 81);
+}
+
+.search-bar__input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.search-bar__search {
+    font-size: 26px;
+    color: #c067e9;
+    padding: 0 0 0 18px;
+}
+
+.main-forecast__container {
+    position: absolute;
+    top: 192px;
+    width: 729px;
+    height: 286px;
+    background: radial-gradient(81.45% 311.02% at 3.54% 3.85%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.main-forecast__city-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-data {
+    margin: 31px 0 0 0;
+    width: 389px;
+    max-width: 450px;
+    height: 92px;
+    padding: 0 0 0 52px;
+}
+
+.city, .date {
+    color: #fff;
+}
+
+.city {
+    font-size: 36px;
+}
+
+.date {
+    font-size: 25px;
+}
+
+.degrees {
+    position: relative;
+    display: flex;
+    margin: 23px 110px 0 0;
+}
+
+.celcius {
+    /* width: 120px;
+    height: 100px; */
+    color: #ffff;
+    font-size: 90px;
+}
+
+.degree {
+    /* position: absolute;
+    left: 60px;
+    top: 45px; */
+    margin: 20px 0 0 0;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    display: block;
+    height: 22px;
+    width: 22px;
+}
+
+.details {
+    position: absolute;
+    width: 619px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    top: 168px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pressure, .weather, .wind {
+    width: 190px;
+    display: flex;
+    align-items: center;
+}
+
+.pressure__percent, .weather__info, .wind__speed {
+    color: #FFFFFF;
+    font-size: 25px;
+    padding: 0 0 0 13px;
+}
+
+.week-forecast {
+    position: absolute;
+    top: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.week-forecast__item {
+    display: flex;
+    justify-content: center;
+    width: 117px;
+    height: 123px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 20px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.week-forecast__degrees {
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    width: 36px;
+    height: 40px;
+    top: 10px;
+}
+
+.week-forecast__celcius{
+    font-size: 35px;
+    color: #fff;
+}
+
+.week-forecast__degree {
+    position: absolute;
+    /* left: 60px;
+    top: 45px; */
+    border-radius: 50%;
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #fff;
+    left: 30px;
+    top: 5px;
+}
+
+.week-forecast__weather__img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 47px;
+}
+
+.week-forecast__weekday {
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 91px;
+}
